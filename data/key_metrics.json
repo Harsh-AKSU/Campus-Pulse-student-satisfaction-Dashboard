@@ -1,0 +1,11 @@
+{
+  "total_responses": 500,
+  "average_satisfaction": 3.75,
+  "min_score": 1,
+  "max_score": 5,
+  "facility_count": 8,
+  "academic_years": [
+    "2023-2024",
+    "2024-2025"
+  ]
+}

@@ -1,0 +1,501 @@
+student_id,academic_year,major,facility_rated,satisfaction_score,timestamp,feedback
+STU00180,2023-2024,Engineering,Sports Center,3,2023-01-01,Poor quality
+STU00303,2023-2024,Computer Science,Parking,5,2023-01-03,Good experience
+STU00163,2024-2025,Medicine,Cafeteria,4,2023-01-04,Excellent service
+STU00421,2024-2025,Medicine,Library,4,2023-01-04,Excellent service
+STU00032,2023-2024,Sciences,Medical Center,4,2023-01-07,Very satisfied
+STU00231,2024-2025,Business,Parking,3,2023-01-08,Not satisfied
+STU00391,2023-2024,Education,Cafeteria,5,2023-01-09,Average facilities
+STU00367,2024-2025,Medicine,Sports Center,2,2023-01-10,Excellent service
+STU00432,2024-2025,Arts,Student Center,3,2023-01-10,Average facilities
+STU00150,2024-2025,Medicine,Library,2,2023-01-12,Poor quality
+STU00291,2023-2024,Law,Library,4,2023-01-16,Good experience
+STU00184,2023-2024,Arts,Dormitory,4,2023-01-20,Average facilities
+STU00225,2024-2025,Computer Science,Library,1,2023-01-22,Very satisfied
+STU00484,2024-2025,Medicine,Library,1,2023-01-25,Average facilities
+STU00003,2023-2024,Medicine,Library,4,2023-01-26,Poor quality
+STU00464,2023-2024,Education,Sports Center,5,2023-01-26,Very satisfied
+STU00021,2024-2025,Sciences,Parking,2,2023-01-28,Satisfactory
+STU00499,2023-2024,Sciences,Sports Center,5,2023-01-29,Needs improvement
+STU00015,2024-2025,Engineering,Student Center,1,2023-01-31,Very satisfied
+STU00014,2023-2024,Law,Sports Center,5,2023-02-02,Excellent service
+STU00103,2024-2025,Arts,Dormitory,3,2023-02-02,Good experience
+STU00238,2024-2025,Medicine,Medical Center,4,2023-02-02,Excellent service
+STU00438,2024-2025,Medicine,Student Center,2,2023-02-06,Not satisfied
+STU00475,2023-2024,Arts,Medical Center,4,2023-02-09,Average facilities
+STU00344,2024-2025,Education,Library,4,2023-02-10,Needs improvement
+STU00448,2024-2025,Sciences,Medical Center,5,2023-02-10,Satisfactory
+STU00445,2024-2025,Medicine,Sports Center,1,2023-02-12,Good experience
+STU00049,2024-2025,Engineering,Student Center,4,2023-02-14,Good experience
+STU00420,2024-2025,Sciences,Library,3,2023-02-15,Good experience
+STU00064,2023-2024,Education,Student Center,5,2023-02-16,Very satisfied
+STU00134,2023-2024,Computer Science,Parking,2,2023-02-18,Excellent service
+STU00288,2023-2024,Sciences,Lab Facilities,5,2023-02-21,Poor quality
+STU00323,2024-2025,Law,Student Center,1,2023-02-21,Good experience
+STU00415,2023-2024,Arts,Cafeteria,3,2023-02-22,Poor quality
+STU00264,2023-2024,Engineering,Parking,1,2023-02-25,Poor quality
+STU00101,2023-2024,Medicine,Sports Center,2,2023-02-27,Satisfactory
+STU00329,2024-2025,Education,Lab Facilities,3,2023-02-28,Needs improvement
+STU00322,2023-2024,Arts,Sports Center,3,2023-02-28,Excellent service
+STU00317,2023-2024,Computer Science,Cafeteria,3,2023-03-01,Not satisfied
+STU00189,2023-2024,Education,Sports Center,2,2023-03-01,Very satisfied
+STU00300,2024-2025,Business,Cafeteria,1,2023-03-02,Poor quality
+STU00235,2024-2025,Engineering,Cafeteria,5,2023-03-02,Satisfactory
+STU00269,2023-2024,Arts,Student Center,5,2023-03-04,Good experience
+STU00320,2024-2025,Computer Science,Sports Center,3,2023-03-04,Very satisfied
+STU00142,2023-2024,Law,Library,5,2023-03-07,Very satisfied
+STU00223,2024-2025,Arts,Library,5,2023-03-07,Needs improvement
+STU00107,2024-2025,Education,Student Center,1,2023-03-09,Very satisfied
+STU00335,2024-2025,Computer Science,Dormitory,5,2023-03-11,Not satisfied
+STU00237,2024-2025,Arts,Library,4,2023-03-11,Poor quality
+STU00379,2024-2025,Medicine,Lab Facilities,4,2023-03-12,Not satisfied
+STU00333,2024-2025,Business,Parking,4,2023-03-12,Excellent service
+STU00195,2023-2024,Engineering,Cafeteria,3,2023-03-12,Poor quality
+STU00063,2023-2024,Education,Parking,2,2023-03-13,Not satisfied
+STU00490,2023-2024,Sciences,Library,3,2023-03-13,Good experience
+STU00232,2024-2025,Computer Science,Medical Center,5,2023-03-14,Needs improvement
+STU00240,2024-2025,Arts,Sports Center,5,2023-03-14,Good experience
+STU00085,2023-2024,Law,Lab Facilities,4,2023-03-15,Very satisfied
+STU00366,2023-2024,Computer Science,Lab Facilities,4,2023-03-16,Good experience
+STU00372,2024-2025,Sciences,Sports Center,5,2023-03-17,Good experience
+STU00284,2023-2024,Arts,Library,2,2023-03-19,Average facilities
+STU00434,2024-2025,Computer Science,Dormitory,5,2023-03-19,Poor quality
+STU00054,2024-2025,Arts,Parking,4,2023-03-22,Poor quality
+STU00192,2023-2024,Law,Sports Center,4,2023-03-22,Good experience
+STU00068,2023-2024,Sciences,Parking,4,2023-03-23,Very satisfied
+STU00331,2023-2024,Medicine,Lab Facilities,5,2023-03-24,Good experience
+STU00346,2023-2024,Medicine,Sports Center,3,2023-03-25,Needs improvement
+STU00193,2023-2024,Medicine,Student Center,4,2023-03-29,Needs improvement
+STU00011,2023-2024,Computer Science,Student Center,3,2023-03-31,Very satisfied
+STU00133,2023-2024,Medicine,Lab Facilities,1,2023-04-04,Not satisfied
+STU00416,2023-2024,Law,Dormitory,5,2023-04-05,Average facilities
+STU00042,2023-2024,Engineering,Cafeteria,4,2023-04-05,Satisfactory
+STU00292,2023-2024,Sciences,Student Center,5,2023-04-06,Excellent service
+STU00016,2023-2024,Business,Lab Facilities,4,2023-04-06,Excellent service
+STU00256,2023-2024,Law,Cafeteria,4,2023-04-07,Not satisfied
+STU00257,2023-2024,Engineering,Lab Facilities,4,2023-04-10,Satisfactory
+STU00044,2024-2025,Engineering,Library,4,2023-04-10,Not satisfied
+STU00268,2024-2025,Sciences,Dormitory,4,2023-04-11,Satisfactory
+STU00287,2023-2024,Education,Cafeteria,3,2023-04-11,Excellent service
+STU00371,2024-2025,Medicine,Parking,5,2023-04-13,Excellent service
+STU00070,2024-2025,Education,Student Center,3,2023-04-14,Average facilities
+STU00008,2023-2024,Business,Student Center,4,2023-04-15,Satisfactory
+STU00041,2023-2024,Education,Student Center,3,2023-04-15,Very satisfied
+STU00454,2024-2025,Arts,Sports Center,3,2023-04-16,Average facilities
+STU00396,2024-2025,Arts,Lab Facilities,5,2023-04-17,Very satisfied
+STU00168,2023-2024,Arts,Lab Facilities,5,2023-04-19,Excellent service
+STU00400,2023-2024,Business,Student Center,5,2023-04-20,Satisfactory
+STU00473,2023-2024,Computer Science,Library,4,2023-04-21,Not satisfied
+STU00272,2024-2025,Medicine,Lab Facilities,3,2023-04-22,Needs improvement
+STU00135,2023-2024,Engineering,Sports Center,5,2023-04-23,Very satisfied
+STU00158,2024-2025,Business,Library,3,2023-04-25,Poor quality
+STU00002,2024-2025,Medicine,Parking,5,2023-04-25,Average facilities
+STU00185,2023-2024,Computer Science,Medical Center,3,2023-04-25,Poor quality
+STU00433,2023-2024,Computer Science,Lab Facilities,4,2023-04-25,Not satisfied
+STU00152,2023-2024,Sciences,Student Center,1,2023-04-28,Satisfactory
+STU00399,2024-2025,Education,Dormitory,5,2023-04-29,Good experience
+STU00500,2024-2025,Business,Parking,4,2023-04-29,Good experience
+STU00339,2024-2025,Arts,Lab Facilities,5,2023-05-03,Needs improvement
+STU00220,2023-2024,Arts,Sports Center,4,2023-05-04,Good experience
+STU00052,2024-2025,Arts,Library,3,2023-05-08,Good experience
+STU00197,2024-2025,Education,Cafeteria,2,2023-05-09,Excellent service
+STU00444,2024-2025,Medicine,Sports Center,4,2023-05-11,Average facilities
+STU00198,2024-2025,Engineering,Sports Center,5,2023-05-12,Satisfactory
+STU00423,2024-2025,Computer Science,Sports Center,4,2023-05-14,Average facilities
+STU00360,2023-2024,Education,Parking,3,2023-05-15,Not satisfied
+STU00377,2024-2025,Engineering,Dormitory,2,2023-05-16,Average facilities
+STU00248,2023-2024,Education,Lab Facilities,2,2023-05-16,Excellent service
+STU00397,2024-2025,Law,Sports Center,5,2023-05-18,Excellent service
+STU00130,2024-2025,Education,Cafeteria,3,2023-05-22,Needs improvement
+STU00007,2023-2024,Sciences,Dormitory,4,2023-05-23,Satisfactory
+STU00119,2024-2025,Education,Student Center,5,2023-05-23,Very satisfied
+STU00278,2024-2025,Sciences,Parking,5,2023-05-24,Poor quality
+STU00117,2023-2024,Computer Science,Parking,3,2023-05-27,Needs improvement
+STU00442,2024-2025,Medicine,Cafeteria,4,2023-06-01,Very satisfied
+STU00436,2024-2025,Computer Science,Cafeteria,5,2023-06-02,Very satisfied
+STU00136,2023-2024,Engineering,Sports Center,3,2023-06-06,Satisfactory
+STU00175,2024-2025,Arts,Library,4,2023-06-06,Average facilities
+STU00313,2024-2025,Computer Science,Library,5,2023-06-08,Good experience
+STU00459,2023-2024,Engineering,Lab Facilities,3,2023-06-08,Very satisfied
+STU00038,2023-2024,Education,Parking,4,2023-06-09,Poor quality
+STU00402,2024-2025,Arts,Sports Center,5,2023-06-09,Satisfactory
+STU00161,2023-2024,Sciences,Medical Center,4,2023-06-11,Good experience
+STU00328,2023-2024,Engineering,Student Center,4,2023-06-11,Average facilities
+STU00383,2024-2025,Business,Sports Center,2,2023-06-11,Not satisfied
+STU00138,2023-2024,Education,Cafeteria,3,2023-06-13,Average facilities
+STU00033,2024-2025,Computer Science,Library,3,2023-06-13,Very satisfied
+STU00471,2023-2024,Sciences,Student Center,5,2023-06-13,Very satisfied
+STU00177,2023-2024,Arts,Parking,3,2023-06-15,Good experience
+STU00426,2023-2024,Business,Lab Facilities,4,2023-06-15,Very satisfied
+STU00461,2024-2025,Computer Science,Student Center,4,2023-06-16,Satisfactory
+STU00076,2024-2025,Law,Student Center,5,2023-06-16,Not satisfied
+STU00091,2024-2025,Computer Science,Dormitory,1,2023-06-17,Needs improvement
+STU00301,2023-2024,Computer Science,Parking,5,2023-06-18,Not satisfied
+STU00202,2024-2025,Sciences,Cafeteria,4,2023-06-19,Satisfactory
+STU00294,2024-2025,Arts,Library,4,2023-06-20,Not satisfied
+STU00088,2023-2024,Business,Medical Center,4,2023-06-25,Not satisfied
+STU00462,2023-2024,Computer Science,Student Center,4,2023-07-01,Needs improvement
+STU00166,2023-2024,Medicine,Cafeteria,4,2023-07-02,Needs improvement
+STU00465,2024-2025,Education,Sports Center,4,2023-07-03,Needs improvement
+STU00280,2024-2025,Business,Dormitory,5,2023-07-07,Satisfactory
+STU00332,2023-2024,Medicine,Lab Facilities,2,2023-07-10,Average facilities
+STU00275,2023-2024,Engineering,Parking,5,2023-07-14,Poor quality
+STU00314,2023-2024,Arts,Student Center,4,2023-07-14,Very satisfied
+STU00255,2023-2024,Engineering,Student Center,5,2023-07-14,Satisfactory
+STU00061,2023-2024,Arts,Library,5,2023-07-16,Not satisfied
+STU00274,2024-2025,Arts,Sports Center,5,2023-07-16,Poor quality
+STU00486,2024-2025,Engineering,Parking,4,2023-07-17,Not satisfied
+STU00023,2024-2025,Law,Cafeteria,2,2023-07-23,Good experience
+STU00174,2024-2025,Law,Parking,5,2023-07-23,Needs improvement
+STU00478,2024-2025,Sciences,Medical Center,3,2023-07-24,Not satisfied
+STU00210,2023-2024,Sciences,Student Center,5,2023-07-25,Average facilities
+STU00408,2024-2025,Business,Student Center,5,2023-07-28,Excellent service
+STU00354,2024-2025,Business,Lab Facilities,5,2023-07-29,Excellent service
+STU00079,2023-2024,Engineering,Lab Facilities,5,2023-08-03,Good experience
+STU00450,2024-2025,Medicine,Dormitory,2,2023-08-04,Excellent service
+STU00406,2024-2025,Engineering,Medical Center,5,2023-08-04,Not satisfied
+STU00108,2024-2025,Sciences,Lab Facilities,4,2023-08-05,Average facilities
+STU00207,2024-2025,Arts,Student Center,4,2023-08-05,Very satisfied
+STU00111,2024-2025,Medicine,Library,5,2023-08-06,Very satisfied
+STU00298,2023-2024,Education,Library,1,2023-08-07,Average facilities
+STU00374,2024-2025,Computer Science,Cafeteria,5,2023-08-07,Excellent service
+STU00246,2024-2025,Engineering,Medical Center,2,2023-08-08,Not satisfied
+STU00039,2023-2024,Medicine,Library,4,2023-08-09,Poor quality
+STU00316,2024-2025,Medicine,Dormitory,5,2023-08-11,Very satisfied
+STU00017,2024-2025,Sciences,Cafeteria,5,2023-08-12,Needs improvement
+STU00098,2024-2025,Education,Lab Facilities,5,2023-08-13,Poor quality
+STU00129,2024-2025,Education,Lab Facilities,1,2023-08-13,Not satisfied
+STU00230,2023-2024,Arts,Sports Center,4,2023-08-14,Average facilities
+STU00028,2024-2025,Engineering,Sports Center,5,2023-08-14,Very satisfied
+STU00477,2023-2024,Sciences,Parking,4,2023-08-16,Good experience
+STU00006,2024-2025,Computer Science,Student Center,5,2023-08-17,Very satisfied
+STU00483,2023-2024,Arts,Lab Facilities,3,2023-08-17,Very satisfied
+STU00222,2023-2024,Business,Cafeteria,5,2023-08-19,Not satisfied
+STU00066,2024-2025,Engineering,Sports Center,4,2023-08-22,Very satisfied
+STU00482,2024-2025,Sciences,Student Center,3,2023-08-22,Average facilities
+STU00236,2024-2025,Business,Dormitory,4,2023-08-23,Poor quality
+STU00102,2024-2025,Sciences,Cafeteria,5,2023-08-23,Satisfactory
+STU00228,2024-2025,Business,Medical Center,2,2023-08-24,Not satisfied
+STU00018,2024-2025,Law,Sports Center,5,2023-08-27,Satisfactory
+STU00069,2024-2025,Education,Student Center,2,2023-08-27,Needs improvement
+STU00337,2023-2024,Business,Sports Center,4,2023-08-29,Poor quality
+STU00460,2023-2024,Education,Sports Center,5,2023-08-31,Not satisfied
+STU00293,2023-2024,Medicine,Dormitory,3,2023-08-31,Poor quality
+STU00242,2023-2024,Law,Dormitory,4,2023-09-01,Very satisfied
+STU00357,2024-2025,Business,Dormitory,4,2023-09-02,Poor quality
+STU00188,2023-2024,Medicine,Library,5,2023-09-03,Poor quality
+STU00190,2024-2025,Engineering,Medical Center,4,2023-09-04,Very satisfied
+STU00252,2023-2024,Medicine,Lab Facilities,4,2023-09-06,Very satisfied
+STU00090,2024-2025,Medicine,Cafeteria,4,2023-09-08,Poor quality
+STU00005,2023-2024,Education,Library,2,2023-09-08,Good experience
+STU00380,2023-2024,Medicine,Cafeteria,3,2023-09-08,Poor quality
+STU00120,2023-2024,Business,Lab Facilities,5,2023-09-10,Excellent service
+STU00341,2023-2024,Education,Parking,5,2023-09-10,Poor quality
+STU00221,2023-2024,Engineering,Library,4,2023-09-11,Poor quality
+STU00273,2024-2025,Computer Science,Sports Center,5,2023-09-12,Not satisfied
+STU00469,2023-2024,Law,Dormitory,4,2023-09-12,Not satisfied
+STU00452,2024-2025,Arts,Student Center,1,2023-09-13,Poor quality
+STU00283,2024-2025,Sciences,Library,3,2023-09-13,Excellent service
+STU00414,2023-2024,Engineering,Medical Center,5,2023-09-15,Needs improvement
+STU00148,2023-2024,Computer Science,Cafeteria,5,2023-09-15,Average facilities
+STU00353,2023-2024,Medicine,Parking,5,2023-09-25,Good experience
+STU00425,2024-2025,Computer Science,Medical Center,4,2023-09-26,Excellent service
+STU00164,2024-2025,Law,Lab Facilities,4,2023-09-27,Excellent service
+STU00123,2024-2025,Education,Sports Center,4,2023-09-27,Excellent service
+STU00048,2023-2024,Arts,Library,4,2023-09-28,Average facilities
+STU00398,2024-2025,Arts,Parking,4,2023-09-28,Not satisfied
+STU00411,2023-2024,Business,Dormitory,5,2023-09-28,Not satisfied
+STU00376,2024-2025,Business,Student Center,4,2023-09-29,Excellent service
+STU00203,2023-2024,Computer Science,Dormitory,3,2023-09-29,Excellent service
+STU00305,2024-2025,Law,Cafeteria,5,2023-09-29,Not satisfied
+STU00358,2024-2025,Business,Sports Center,5,2023-09-29,Not satisfied
+STU00118,2024-2025,Sciences,Student Center,3,2023-09-29,Very satisfied
+STU00155,2023-2024,Law,Medical Center,4,2023-10-01,Satisfactory
+STU00081,2023-2024,Law,Sports Center,3,2023-10-01,Average facilities
+STU00470,2024-2025,Business,Library,3,2023-10-01,Very satisfied
+STU00106,2024-2025,Business,Dormitory,3,2023-10-02,Needs improvement
+STU00094,2024-2025,Arts,Parking,5,2023-10-04,Needs improvement
+STU00403,2023-2024,Law,Library,4,2023-10-06,Good experience
+STU00004,2023-2024,Sciences,Library,3,2023-10-09,Excellent service
+STU00419,2024-2025,Arts,Student Center,1,2023-10-11,Not satisfied
+STU00037,2024-2025,Sciences,Medical Center,4,2023-10-12,Excellent service
+STU00031,2023-2024,Computer Science,Parking,4,2023-10-12,Needs improvement
+STU00072,2024-2025,Business,Cafeteria,1,2023-10-12,Good experience
+STU00243,2024-2025,Engineering,Parking,3,2023-10-13,Not satisfied
+STU00281,2024-2025,Computer Science,Cafeteria,1,2023-10-13,Average facilities
+STU00489,2023-2024,Engineering,Library,5,2023-10-13,Very satisfied
+STU00491,2024-2025,Engineering,Library,5,2023-10-13,Satisfactory
+STU00404,2023-2024,Education,Lab Facilities,4,2023-10-16,Very satisfied
+STU00382,2024-2025,Law,Dormitory,4,2023-10-19,Very satisfied
+STU00307,2024-2025,Sciences,Medical Center,5,2023-10-20,Excellent service
+STU00067,2024-2025,Engineering,Student Center,4,2023-10-24,Not satisfied
+STU00159,2023-2024,Arts,Dormitory,3,2023-10-28,Very satisfied
+STU00056,2024-2025,Sciences,Student Center,5,2023-10-28,Needs improvement
+STU00315,2023-2024,Arts,Lab Facilities,4,2023-10-31,Needs improvement
+STU00170,2024-2025,Education,Sports Center,2,2023-11-02,Needs improvement
+STU00394,2024-2025,Medicine,Lab Facilities,4,2023-11-03,Not satisfied
+STU00363,2023-2024,Engineering,Library,3,2023-11-04,Poor quality
+STU00387,2023-2024,Computer Science,Library,5,2023-11-06,Very satisfied
+STU00481,2024-2025,Arts,Sports Center,5,2023-11-09,Excellent service
+STU00187,2024-2025,Law,Medical Center,1,2023-11-11,Excellent service
+STU00446,2023-2024,Education,Library,5,2023-11-12,Poor quality
+STU00212,2023-2024,Engineering,Dormitory,4,2023-11-16,Average facilities
+STU00321,2024-2025,Education,Medical Center,3,2023-11-18,Poor quality
+STU00356,2023-2024,Medicine,Dormitory,3,2023-11-18,Poor quality
+STU00110,2023-2024,Sciences,Sports Center,2,2023-11-19,Good experience
+STU00104,2024-2025,Law,Library,5,2023-11-20,Average facilities
+STU00352,2023-2024,Engineering,Medical Center,5,2023-11-20,Average facilities
+STU00365,2023-2024,Arts,Medical Center,4,2023-11-20,Not satisfied
+STU00182,2023-2024,Medicine,Medical Center,5,2023-11-28,Average facilities
+STU00100,2023-2024,Law,Sports Center,4,2023-11-29,Poor quality
+STU00488,2024-2025,Arts,Library,4,2023-12-03,Satisfactory
+STU00239,2023-2024,Medicine,Library,3,2023-12-05,Needs improvement
+STU00498,2024-2025,Arts,Medical Center,1,2023-12-06,Poor quality
+STU00466,2023-2024,Computer Science,Lab Facilities,3,2023-12-07,Very satisfied
+STU00422,2024-2025,Education,Library,5,2023-12-08,Needs improvement
+STU00040,2023-2024,Engineering,Sports Center,5,2023-12-11,Needs improvement
+STU00224,2024-2025,Computer Science,Parking,3,2023-12-13,Not satisfied
+STU00271,2024-2025,Medicine,Cafeteria,4,2023-12-14,Needs improvement
+STU00036,2023-2024,Law,Cafeteria,5,2023-12-15,Very satisfied
+STU00157,2023-2024,Education,Cafeteria,5,2023-12-15,Very satisfied
+STU00407,2024-2025,Engineering,Cafeteria,3,2023-12-18,Very satisfied
+STU00046,2024-2025,Sciences,Sports Center,5,2023-12-19,Needs improvement
+STU00378,2023-2024,Engineering,Student Center,4,2023-12-24,Not satisfied
+STU00480,2024-2025,Law,Medical Center,4,2023-12-25,Not satisfied
+STU00492,2023-2024,Arts,Parking,5,2023-12-26,Very satisfied
+STU00260,2023-2024,Education,Sports Center,4,2023-12-29,Satisfactory
+STU00455,2023-2024,Business,Library,4,2023-12-29,Not satisfied
+STU00078,2024-2025,Law,Library,3,2023-12-30,Needs improvement
+STU00449,2023-2024,Law,Lab Facilities,5,2024-01-02,Poor quality
+STU00045,2024-2025,Computer Science,Lab Facilities,1,2024-01-03,Not satisfied
+STU00128,2023-2024,Law,Cafeteria,4,2024-01-06,Needs improvement
+STU00059,2023-2024,Sciences,Lab Facilities,4,2024-01-06,Excellent service
+STU00186,2023-2024,Law,Dormitory,3,2024-01-07,Good experience
+STU00447,2023-2024,Medicine,Medical Center,5,2024-01-09,Very satisfied
+STU00075,2023-2024,Education,Library,4,2024-01-09,Average facilities
+STU00381,2024-2025,Medicine,Lab Facilities,5,2024-01-14,Average facilities
+STU00439,2023-2024,Law,Medical Center,3,2024-01-14,Needs improvement
+STU00077,2024-2025,Medicine,Lab Facilities,3,2024-01-15,Excellent service
+STU00176,2024-2025,Medicine,Parking,1,2024-01-18,Not satisfied
+STU00216,2023-2024,Sciences,Library,4,2024-01-18,Very satisfied
+STU00053,2023-2024,Medicine,Sports Center,4,2024-01-23,Needs improvement
+STU00093,2024-2025,Medicine,Medical Center,3,2024-01-24,Not satisfied
+STU00302,2023-2024,Law,Dormitory,4,2024-01-24,Good experience
+STU00043,2024-2025,Business,Parking,4,2024-01-25,Not satisfied
+STU00071,2024-2025,Law,Student Center,5,2024-01-25,Excellent service
+STU00144,2024-2025,Computer Science,Parking,4,2024-01-26,Good experience
+STU00474,2024-2025,Business,Cafeteria,5,2024-01-27,Excellent service
+STU00143,2024-2025,Sciences,Medical Center,5,2024-01-30,Excellent service
+STU00304,2024-2025,Computer Science,Lab Facilities,5,2024-02-04,Very satisfied
+STU00359,2023-2024,Engineering,Dormitory,4,2024-02-10,Good experience
+STU00114,2024-2025,Engineering,Parking,4,2024-02-10,Not satisfied
+STU00487,2023-2024,Arts,Parking,5,2024-02-13,Poor quality
+STU00127,2024-2025,Medicine,Dormitory,5,2024-02-13,Very satisfied
+STU00213,2023-2024,Computer Science,Cafeteria,3,2024-02-13,Poor quality
+STU00495,2023-2024,Arts,Lab Facilities,5,2024-02-14,Excellent service
+STU00105,2024-2025,Education,Lab Facilities,3,2024-02-15,Average facilities
+STU00299,2023-2024,Computer Science,Student Center,5,2024-02-15,Excellent service
+STU00270,2023-2024,Computer Science,Cafeteria,1,2024-02-17,Average facilities
+STU00338,2023-2024,Medicine,Lab Facilities,3,2024-02-18,Excellent service
+STU00254,2023-2024,Engineering,Cafeteria,5,2024-02-21,Poor quality
+STU00295,2024-2025,Computer Science,Dormitory,5,2024-02-21,Not satisfied
+STU00457,2024-2025,Arts,Lab Facilities,4,2024-02-21,Satisfactory
+STU00262,2024-2025,Engineering,Sports Center,5,2024-02-25,Poor quality
+STU00467,2024-2025,Medicine,Cafeteria,2,2024-02-26,Excellent service
+STU00463,2024-2025,Law,Student Center,3,2024-02-27,Needs improvement
+STU00027,2024-2025,Business,Cafeteria,3,2024-03-05,Satisfactory
+STU00347,2023-2024,Engineering,Sports Center,3,2024-03-05,Very satisfied
+STU00279,2023-2024,Sciences,Student Center,3,2024-03-08,Needs improvement
+STU00013,2023-2024,Education,Lab Facilities,3,2024-03-08,Poor quality
+STU00035,2024-2025,Business,Library,3,2024-03-08,Poor quality
+STU00140,2023-2024,Sciences,Library,3,2024-03-08,Average facilities
+STU00206,2023-2024,Medicine,Lab Facilities,4,2024-03-09,Good experience
+STU00308,2024-2025,Computer Science,Medical Center,4,2024-03-09,Average facilities
+STU00418,2024-2025,Arts,Parking,4,2024-03-09,Not satisfied
+STU00261,2023-2024,Arts,Parking,3,2024-03-09,Not satisfied
+STU00430,2024-2025,Computer Science,Parking,4,2024-03-13,Not satisfied
+STU00125,2023-2024,Medicine,Lab Facilities,1,2024-03-14,Poor quality
+STU00443,2023-2024,Sciences,Dormitory,3,2024-03-16,Needs improvement
+STU00259,2024-2025,Computer Science,Medical Center,3,2024-03-17,Satisfactory
+STU00160,2024-2025,Engineering,Dormitory,4,2024-03-21,Poor quality
+STU00384,2023-2024,Sciences,Dormitory,3,2024-03-24,Good experience
+STU00217,2024-2025,Business,Lab Facilities,5,2024-03-24,Poor quality
+STU00427,2023-2024,Medicine,Parking,5,2024-03-28,Good experience
+STU00285,2024-2025,Engineering,Parking,2,2024-03-29,Poor quality
+STU00029,2024-2025,Engineering,Student Center,5,2024-04-04,Poor quality
+STU00277,2023-2024,Computer Science,Library,5,2024-04-04,Needs improvement
+STU00219,2024-2025,Sciences,Student Center,4,2024-04-07,Needs improvement
+STU00073,2023-2024,Computer Science,Cafeteria,3,2024-04-09,Very satisfied
+STU00162,2023-2024,Business,Student Center,3,2024-04-09,Not satisfied
+STU00306,2023-2024,Arts,Parking,4,2024-04-10,Good experience
+STU00364,2024-2025,Engineering,Lab Facilities,4,2024-04-13,Not satisfied
+STU00116,2024-2025,Business,Parking,4,2024-04-14,Excellent service
+STU00368,2024-2025,Law,Lab Facilities,5,2024-04-14,Very satisfied
+STU00050,2024-2025,Education,Library,5,2024-04-15,Poor quality
+STU00479,2023-2024,Sciences,Lab Facilities,5,2024-04-16,Good experience
+STU00282,2024-2025,Business,Parking,4,2024-04-18,Poor quality
+STU00092,2024-2025,Sciences,Parking,4,2024-04-18,Poor quality
+STU00263,2023-2024,Medicine,Parking,5,2024-04-23,Poor quality
+STU00146,2023-2024,Medicine,Lab Facilities,3,2024-04-24,Average facilities
+STU00476,2024-2025,Engineering,Medical Center,4,2024-04-26,Satisfactory
+STU00251,2024-2025,Sciences,Parking,3,2024-04-29,Needs improvement
+STU00253,2024-2025,Engineering,Medical Center,5,2024-04-29,Needs improvement
+STU00200,2023-2024,Business,Student Center,4,2024-05-01,Satisfactory
+STU00325,2024-2025,Sciences,Student Center,5,2024-05-03,Needs improvement
+STU00297,2024-2025,Medicine,Sports Center,3,2024-05-07,Satisfactory
+STU00194,2023-2024,Arts,Medical Center,5,2024-05-12,Good experience
+STU00296,2024-2025,Education,Cafeteria,4,2024-05-12,Not satisfied
+STU00245,2023-2024,Business,Parking,4,2024-05-12,Not satisfied
+STU00312,2023-2024,Business,Cafeteria,5,2024-05-13,Needs improvement
+STU00413,2024-2025,Medicine,Student Center,3,2024-05-15,Excellent service
+STU00183,2024-2025,Education,Medical Center,5,2024-05-15,Good experience
+STU00132,2023-2024,Arts,Cafeteria,4,2024-05-20,Very satisfied
+STU00113,2024-2025,Arts,Medical Center,4,2024-05-26,Satisfactory
+STU00165,2024-2025,Computer Science,Student Center,4,2024-05-27,Satisfactory
+STU00326,2024-2025,Arts,Library,4,2024-05-29,Poor quality
+STU00412,2024-2025,Medicine,Cafeteria,2,2024-06-01,Not satisfied
+STU00019,2024-2025,Sciences,Medical Center,3,2024-06-01,Very satisfied
+STU00375,2023-2024,Engineering,Sports Center,4,2024-06-02,Poor quality
+STU00172,2023-2024,Law,Sports Center,4,2024-06-03,Excellent service
+STU00167,2024-2025,Law,Student Center,3,2024-06-03,Good experience
+STU00330,2024-2025,Sciences,Student Center,5,2024-06-04,Average facilities
+STU00131,2024-2025,Computer Science,Cafeteria,3,2024-06-05,Poor quality
+STU00494,2024-2025,Arts,Cafeteria,5,2024-06-05,Not satisfied
+STU00241,2024-2025,Education,Student Center,5,2024-06-10,Needs improvement
+STU00218,2023-2024,Arts,Cafeteria,3,2024-06-13,Satisfactory
+STU00351,2024-2025,Education,Dormitory,2,2024-06-19,Poor quality
+STU00204,2023-2024,Sciences,Cafeteria,5,2024-06-24,Very satisfied
+STU00147,2023-2024,Medicine,Parking,3,2024-06-25,Not satisfied
+STU00390,2023-2024,Computer Science,Library,4,2024-06-25,Good experience
+STU00179,2023-2024,Engineering,Parking,4,2024-06-27,Not satisfied
+STU00327,2023-2024,Business,Library,4,2024-06-27,Good experience
+STU00196,2024-2025,Arts,Student Center,1,2024-06-29,Good experience
+STU00089,2024-2025,Arts,Medical Center,4,2024-06-30,Not satisfied
+STU00276,2024-2025,Medicine,Medical Center,4,2024-07-03,Good experience
+STU00051,2023-2024,Computer Science,Cafeteria,5,2024-07-03,Satisfactory
+STU00497,2023-2024,Computer Science,Medical Center,2,2024-07-03,Needs improvement
+STU00154,2023-2024,Medicine,Cafeteria,4,2024-07-03,Not satisfied
+STU00373,2024-2025,Engineering,Medical Center,5,2024-07-04,Needs improvement
+STU00122,2023-2024,Engineering,Sports Center,3,2024-07-05,Not satisfied
+STU00247,2023-2024,Business,Lab Facilities,5,2024-07-06,Not satisfied
+STU00178,2023-2024,Sciences,Medical Center,4,2024-07-06,Needs improvement
+STU00208,2024-2025,Sciences,Lab Facilities,1,2024-07-06,Satisfactory
+STU00290,2024-2025,Education,Library,3,2024-07-07,Not satisfied
+STU00319,2023-2024,Arts,Cafeteria,4,2024-07-09,Poor quality
+STU00385,2023-2024,Sciences,Library,4,2024-07-10,Not satisfied
+STU00026,2024-2025,Education,Lab Facilities,2,2024-07-12,Very satisfied
+STU00437,2024-2025,Law,Lab Facilities,4,2024-07-12,Not satisfied
+STU00010,2024-2025,Engineering,Medical Center,5,2024-07-12,Good experience
+STU00201,2023-2024,Engineering,Student Center,4,2024-07-16,Good experience
+STU00286,2023-2024,Computer Science,Lab Facilities,4,2024-07-17,Excellent service
+STU00428,2024-2025,Arts,Sports Center,2,2024-07-18,Needs improvement
+STU00441,2023-2024,Arts,Library,2,2024-07-19,Average facilities
+STU00055,2023-2024,Computer Science,Library,4,2024-07-19,Needs improvement
+STU00149,2023-2024,Sciences,Sports Center,1,2024-07-20,Excellent service
+STU00401,2024-2025,Medicine,Sports Center,5,2024-07-20,Poor quality
+STU00227,2023-2024,Business,Parking,4,2024-07-21,Excellent service
+STU00393,2024-2025,Computer Science,Medical Center,4,2024-07-21,Very satisfied
+STU00310,2024-2025,Medicine,Dormitory,4,2024-07-23,Poor quality
+STU00097,2024-2025,Medicine,Cafeteria,2,2024-07-24,Good experience
+STU00456,2023-2024,Business,Student Center,5,2024-07-27,Not satisfied
+STU00121,2024-2025,Arts,Cafeteria,4,2024-07-28,Very satisfied
+STU00022,2023-2024,Education,Library,5,2024-07-28,Satisfactory
+STU00431,2023-2024,Education,Library,5,2024-07-28,Good experience
+STU00370,2023-2024,Law,Cafeteria,2,2024-07-30,Poor quality
+STU00350,2023-2024,Law,Student Center,4,2024-08-01,Average facilities
+STU00191,2023-2024,Engineering,Sports Center,3,2024-08-03,Needs improvement
+STU00109,2024-2025,Arts,Lab Facilities,4,2024-08-03,Needs improvement
+STU00340,2024-2025,Medicine,Lab Facilities,3,2024-08-06,Poor quality
+STU00249,2023-2024,Computer Science,Cafeteria,5,2024-08-07,Good experience
+STU00250,2023-2024,Engineering,Dormitory,4,2024-08-13,Poor quality
+STU00060,2023-2024,Law,Dormitory,2,2024-08-14,Needs improvement
+STU00342,2024-2025,Sciences,Medical Center,4,2024-08-15,Not satisfied
+STU00318,2023-2024,Business,Medical Center,2,2024-08-16,Not satisfied
+STU00440,2023-2024,Engineering,Sports Center,5,2024-08-19,Not satisfied
+STU00349,2024-2025,Education,Medical Center,5,2024-08-20,Needs improvement
+STU00126,2024-2025,Engineering,Medical Center,3,2024-08-20,Very satisfied
+STU00324,2024-2025,Education,Lab Facilities,1,2024-08-21,Needs improvement
+STU00124,2023-2024,Engineering,Parking,4,2024-08-21,Satisfactory
+STU00229,2023-2024,Medicine,Lab Facilities,4,2024-08-25,Satisfactory
+STU00226,2024-2025,Medicine,Lab Facilities,3,2024-08-25,Satisfactory
+STU00030,2024-2025,Engineering,Student Center,4,2024-08-26,Average facilities
+STU00012,2023-2024,Engineering,Student Center,3,2024-08-27,Needs improvement
+STU00343,2023-2024,Computer Science,Parking,4,2024-08-31,Good experience
+STU00334,2023-2024,Arts,Medical Center,5,2024-09-01,Very satisfied
+STU00141,2024-2025,Law,Lab Facilities,5,2024-09-02,Excellent service
+STU00145,2024-2025,Sciences,Dormitory,4,2024-09-02,Very satisfied
+STU00181,2023-2024,Sciences,Lab Facilities,2,2024-09-05,Satisfactory
+STU00020,2023-2024,Engineering,Student Center,5,2024-09-08,Good experience
+STU00047,2024-2025,Medicine,Sports Center,5,2024-09-10,Not satisfied
+STU00405,2024-2025,Business,Cafeteria,4,2024-09-11,Excellent service
+STU00205,2024-2025,Medicine,Student Center,4,2024-09-13,Not satisfied
+STU00086,2023-2024,Education,Library,4,2024-09-15,Not satisfied
+STU00173,2023-2024,Law,Sports Center,5,2024-09-15,Average facilities
+STU00388,2023-2024,Law,Dormitory,4,2024-09-18,Satisfactory
+STU00058,2023-2024,Law,Parking,5,2024-09-25,Excellent service
+STU00345,2023-2024,Medicine,Parking,3,2024-09-26,Poor quality
+STU00458,2024-2025,Computer Science,Dormitory,4,2024-09-27,Satisfactory
+STU00369,2023-2024,Education,Library,3,2024-09-28,Satisfactory
+STU00169,2023-2024,Medicine,Sports Center,5,2024-10-02,Excellent service
+STU00137,2023-2024,Computer Science,Parking,4,2024-10-04,Very satisfied
+STU00057,2024-2025,Sciences,Medical Center,5,2024-10-05,Average facilities
+STU00234,2024-2025,Sciences,Library,2,2024-10-08,Poor quality
+STU00410,2024-2025,Law,Cafeteria,1,2024-10-11,Satisfactory
+STU00417,2023-2024,Engineering,Library,5,2024-10-11,Poor quality
+STU00074,2024-2025,Engineering,Sports Center,4,2024-10-12,Needs improvement
+STU00087,2024-2025,Law,Library,5,2024-10-12,Average facilities
+STU00424,2023-2024,Education,Parking,3,2024-10-14,Poor quality
+STU00171,2024-2025,Computer Science,Medical Center,5,2024-10-16,Needs improvement
+STU00001,2023-2024,Education,Lab Facilities,2,2024-10-16,Poor quality
+STU00095,2024-2025,Arts,Cafeteria,2,2024-10-17,Poor quality
+STU00493,2023-2024,Engineering,Parking,5,2024-10-18,Satisfactory
+STU00156,2024-2025,Medicine,Library,5,2024-10-18,Satisfactory
+STU00115,2023-2024,Law,Parking,4,2024-10-20,Very satisfied
+STU00362,2023-2024,Computer Science,Lab Facilities,3,2024-10-22,Very satisfied
+STU00267,2024-2025,Medicine,Parking,3,2024-10-23,Needs improvement
+STU00084,2024-2025,Engineering,Dormitory,3,2024-10-25,Not satisfied
+STU00215,2023-2024,Sciences,Cafeteria,3,2024-10-27,Not satisfied
+STU00024,2024-2025,Education,Cafeteria,4,2024-10-27,Poor quality
+STU00289,2023-2024,Sciences,Dormitory,2,2024-10-29,Average facilities
+STU00266,2024-2025,Business,Sports Center,5,2024-10-31,Good experience
+STU00389,2023-2024,Arts,Parking,4,2024-10-31,Satisfactory
+STU00112,2023-2024,Engineering,Library,4,2024-11-02,Very satisfied
+STU00348,2024-2025,Engineering,Parking,3,2024-11-04,Good experience
+STU00258,2024-2025,Business,Sports Center,5,2024-11-05,Very satisfied
+STU00485,2023-2024,Sciences,Parking,4,2024-11-06,Good experience
+STU00199,2023-2024,Engineering,Sports Center,5,2024-11-06,Very satisfied
+STU00311,2024-2025,Business,Sports Center,5,2024-11-08,Good experience
+STU00065,2023-2024,Arts,Lab Facilities,5,2024-11-08,Needs improvement
+STU00395,2023-2024,Arts,Student Center,3,2024-11-10,Poor quality
+STU00453,2024-2025,Medicine,Medical Center,1,2024-11-13,Not satisfied
+STU00392,2023-2024,Education,Lab Facilities,3,2024-11-14,Satisfactory
+STU00468,2023-2024,Law,Lab Facilities,4,2024-11-16,Satisfactory
+STU00244,2023-2024,Medicine,Parking,4,2024-11-16,Needs improvement
+STU00355,2024-2025,Education,Cafeteria,5,2024-11-16,Average facilities
+STU00080,2024-2025,Engineering,Library,4,2024-11-17,Not satisfied
+STU00214,2023-2024,Arts,Lab Facilities,4,2024-11-18,Not satisfied
+STU00361,2024-2025,Arts,Lab Facilities,5,2024-11-18,Poor quality
+STU00265,2023-2024,Medicine,Lab Facilities,5,2024-11-20,Needs improvement
+STU00336,2024-2025,Arts,Lab Facilities,4,2024-11-22,Not satisfied
+STU00009,2023-2024,Sciences,Dormitory,5,2024-11-23,Very satisfied
+STU00496,2023-2024,Medicine,Student Center,4,2024-11-26,Good experience
+STU00151,2023-2024,Education,Student Center,3,2024-11-27,Very satisfied
+STU00139,2023-2024,Engineering,Dormitory,2,2024-11-27,Not satisfied
+STU00153,2023-2024,Education,Dormitory,3,2024-11-29,Needs improvement
+STU00451,2024-2025,Business,Medical Center,5,2024-11-29,Poor quality
+STU00083,2023-2024,Arts,Student Center,2,2024-11-30,Satisfactory
+STU00099,2024-2025,Arts,Lab Facilities,4,2024-12-02,Needs improvement
+STU00409,2024-2025,Education,Parking,5,2024-12-04,Needs improvement
+STU00096,2024-2025,Arts,Cafeteria,4,2024-12-05,Not satisfied
+STU00209,2024-2025,Sciences,Library,3,2024-12-07,Not satisfied
+STU00435,2024-2025,Sciences,Dormitory,2,2024-12-08,Poor quality
+STU00309,2024-2025,Law,Library,4,2024-12-14,Average facilities
+STU00034,2024-2025,Computer Science,Lab Facilities,3,2024-12-15,Average facilities
+STU00025,2024-2025,Engineering,Medical Center,5,2024-12-19,Poor quality
+STU00082,2024-2025,Computer Science,Student Center,4,2024-12-19,Not satisfied
+STU00472,2024-2025,Education,Cafeteria,3,2024-12-19,Average facilities
+STU00386,2024-2025,Medicine,Dormitory,2,2024-12-21,Satisfactory
+STU00062,2023-2024,Business,Student Center,5,2024-12-22,Good experience
+STU00429,2023-2024,Law,Lab Facilities,5,2024-12-23,Good experience
+STU00233,2024-2025,Computer Science,Student Center,2,2024-12-25,Satisfactory
+STU00211,2023-2024,Education,Library,2,2024-12-31,Very satisfied

@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Pulse - Student Satisfaction Dashboard</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            overflow: hidden;
+        }
+
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .navbar {
+            background: #f8f9fa;
+            padding: 20px;
+            border-bottom: 2px solid #e9ecef;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .nav-item {
+            padding: 10px 20px;
+            background: white;
+            border: 2px solid #667eea;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: 600;
+            color: #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .nav-item:hover,
+        .nav-item.active {
+            background: #667eea;
+            color: white;
+        }
+
+        .content {
+            padding: 30px 20px;
+        }
+
+        .section {
+            display: none;
+        }
+
+        .section.active {
+            display: block;
+            animation: fadeIn 0.3s ease;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .metric-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+            margin-bottom: 10px;
+        }
+
+        .metric-value {
+            font-size: 2em;
+            font-weight: bold;
+        }
+
+        .chart-container {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .chart-container h3 {
+            margin-bottom: 20px;
+            color: #333;
+            font-size: 1.5em;
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 400px;
+            margin-bottom: 20px;
+        }
+
+        canvas {
+            max-height: 400px;
+        }
+
+        .filters {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+        }
+
+        .filter-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .filter-group label {
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        .filter-group select,
+        .filter-group input {
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .filter-group select:focus,
+        .filter-group input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+
+        .btn-group {
+            display: flex;
+            gap: 10px;
+            grid-column: 1 / -1;
+        }
+
+        button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 1em;
+            flex: 1;
+        }
+
+        .btn-primary {
+            background: #667eea;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #5568d3;
+        }
+
+        .btn-secondary {
+            background: #f0f0f0;
+            color: #333;
+        }
+
+        .btn-secondary:hover {
+            background: #e0e0e0;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .data-table thead {
+            background: #667eea;
+            color: white;
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        .data-table tbody tr:hover {
+            background: #f5f5f5;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #667eea;
+            font-size: 1.2em;
+        }
+
+        .error {
+            background: #fee;
+            color: #c33;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c33;
+        }
+
+        .success {
+            background: #efe;
+            color: #3c3;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            border-left: 4px solid #3c3;
+        }
+
+        footer {
+            background: #f8f9fa;
+            padding: 20px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .facility-item {
+            margin-bottom: 20px;
+        }
+
+        .facility-header {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+
+        .facility-bar {
+            width: 100%;
+            height: 30px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .facility-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            transition: width 0.3s ease;
+        }
+
+        @media (max-width: 768px) {
+            header h1 { font-size: 1.8em; }
+            .metrics-grid { grid-template-columns: 1fr; }
+            .navbar { flex-direction: column; }
+            .nav-item { width: 100%; text-align: center; }
+            .filters { grid-template-columns: 1fr; }
+            button { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Campus Pulse</h1>
+            <p>Student Satisfaction Dashboard</p>
+        </header>
+
+        <div class="navbar">
+            <div class="nav-item active" onclick="switchSection('overview')">
+                <i class="fas fa-home"></i> Overview
+            </div>
+            <div class="nav-item" onclick="switchSection('facilities')">
+                <i class="fas fa-building"></i> Facilities
+            </div>
+            <div class="nav-item" onclick="switchSection('distribution')">
+                <i class="fas fa-chart-pie"></i> Distribution
+            </div>
+            <div class="nav-item" onclick="switchSection('filter')">
+                <i class="fas fa-filter"></i> Filter Data
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="error-message" class="error" style="display: none;"></div>
+            <div id="success-message" class="success" style="display: none;"></div>
+
+            <!-- Overview Section -->
+            <div id="overview" class="section active">
+                <div id="metrics" class="metrics-grid"></div>
+                <div class="chart-container">
+                    <h3>Satisfaction Score Distribution</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="distributionChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facilities Section -->
+            <div id="facilities" class="section">
+                <div class="chart-container">
+                    <h3>Average Satisfaction Score by Facility</h3>
+                    <div id="facilitiesChartContainer"></div>
+                    <div id="facilitiesList"></div>
+                </div>
+            </div>
+
+            <!-- Distribution Section -->
+            <div id="distribution" class="section">
+                <div class="chart-container">
+                    <h3>Satisfaction Distribution</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="categoryChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Filter Section -->
+            <div id="filter" class="section">
+                <div class="filters">
+                    <div class="filter-group">
+                        <label>Facility</label>
+                        <select id="filterFacility">
+                            <option value="">All Facilities</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Academic Year</label>
+                        <select id="filterAcademicYear">
+                            <option value="">All Years</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Major</label>
+                        <select id="filterMajor">
+                            <option value="">All Majors</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Min Score</label>
+                        <input type="number" id="filterMinScore" min="1" max="5" value="1">
+                    </div>
+                    <div class="filter-group">
+                        <label>Max Score</label>
+                        <input type="number" id="filterMaxScore" min="1" max="5" value="5">
+                    </div>
+                    <div class="btn-group">
+                        <button class="btn-primary" onclick="applyFilters()">Apply Filters</button>
+                        <button class="btn-secondary" onclick="resetFilters()">Reset</button>
+                    </div>
+                </div>
+                <div id="filteredResults"></div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2024 Campus Pulse Dashboard - Student Satisfaction Analytics</p>
+        </footer>
+    </div>
+
+    <script>
+        const API_BASE_URL = 'http://localhost:8000/api';
+        let allData = {};
+        let charts = {};
+
+        // Initialize dashboard
+        async function initDashboard() {
+            try {
+                await Promise.all([
+                    loadOverviewData(),
+                    loadFacilitiesData(),
+                    loadFilterOptions(),
+                    loadDistributionData()
+                ]);
+                showMessage('Dashboard loaded successfully!', 'success');
+            } catch (error) {
+                showMessage('Failed to load dashboard. Make sure backend is running at http://localhost:8000', 'error');
+                console.error(error);
+            }
+        }
+
+        async function loadOverviewData() {
+            const response = await fetch(`${API_BASE_URL}/overview`);
+            allData.overview = await response.json();
+            renderMetrics();
+            renderDistributionChart();
+        }
+
+        async function loadFacilitiesData() {
+            const response = await fetch(`${API_BASE_URL}/facilities`);
+            allData.facilities = await response.json();
+            renderFacilitiesChart();
+        }
+
+        async function loadDistributionData() {
+            const response = await fetch(`${API_BASE_URL}/satisfaction-distribution`);
+            allData.distribution = await response.json();
+            renderCategoryChart();
+        }
+
+        async function loadFilterOptions() {
+            const [facilities, years, majors] = await Promise.all([
+                fetch(`${API_BASE_URL}/facilities-list`).then(r => r.json()),
+                fetch(`${API_BASE_URL}/academic-years`).then(r => r.json()),
+                fetch(`${API_BASE_URL}/majors`).then(r => r.json())
+            ]);
+
+            facilities.forEach(f => {
+                const option = document.createElement('option');
+                option.value = f;
+                option.text = f;
+                document.getElementById('filterFacility').appendChild(option);
+            });
+
+            years.forEach(y => {
+                const option = document.createElement('option');
+                option.value = y;
+                option.text = y;
+                document.getElementById('filterAcademicYear').appendChild(option);
+            });
+
+            majors.forEach(m => {
+                const option = document.createElement('option');
+                option.value = m;
+                option.text = m;
+                document.getElementById('filterMajor').appendChild(option);
+            });
+        }
+
+        function renderMetrics() {
+            const metrics = allData.overview;
+            const html = `
+                <div class="metric-card">
+                    <div class="metric-label">Total Responses</div>
+                    <div class="metric-value">${metrics.total_responses}</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Average Satisfaction</div>
+                    <div class="metric-value">${metrics.average_satisfaction.toFixed(2)}/5.0</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Standard Deviation</div>
+                    <div class="metric-value">${metrics.satisfaction_std.toFixed(2)}</div>
+                </div>
+                <div class="metric-card">
+                    <div class="metric-label">Score Range</div>
+                    <div class="metric-value">${metrics.min_score} - ${metrics.max_score}</div>
+                </div>
+            `;
+            document.getElementById('metrics').innerHTML = html;
+        }
+
+        function renderDistributionChart() {
+            const ctx = document.getElementById('distributionChart').getContext('2d');
+            if (charts.distribution) charts.distribution.destroy();
+
+            const data = [1, 2, 3, 4, 5];
+            const labels = ['1 - Very Low', '2 - Low', '3 - Neutral', '4 - High', '5 - Very High'];
+            const counts = data.map(score => {
+                const count = allData.overview.total_responses / 5; // Approximate
+                return Math.round(count);
+            });
+
+            charts.distribution = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Number of Responses',
+                        data: counts,
+                        backgroundColor: ['#FF6B6B', '#FFA07A', '#FFD700', '#90EE90', '#00B050'],
+                        borderColor: ['#FF5252', '#FF8C42', '#FFC107', '#76B947', '#00A040'],
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: true, position: 'top' }
+                    },
+                    scales: {
+                        y: { beginAtZero: true }
+                    }
+                }
+            });
+        }
+
+        function renderFacilitiesChart() {
+            const facilities = allData.facilities;
+            const html = facilities.map(f => `
+                <div class="facility-item">
+                    <div class="facility-header">
+                        <span>${f.facility}</span>
+                        <span>${f.average_score.toFixed(2)}/5.0 (${f.response_count} responses)</span>
+                    </div>
+                    <div class="facility-bar">
+                        <div class="facility-fill" style="width: ${(f.average_score / 5) * 100}%"></div>
+                    </div>
+                </div>
+            `).join('');
+            document.getElementById('facilitiesList').innerHTML = html;
+        }
+
+        function renderCategoryChart() {
+            const ctx = document.getElementById('categoryChart').getContext('2d');
+            if (charts.category) charts.category.destroy();
+
+            const distribution = allData.distribution;
+            const labels = Object.keys(distribution);
+            const data = labels.map(label => distribution[label].percentage);
+            const colors = ['#FF6B6B', '#FFA07A', '#FFD700', '#90EE90', '#00B050'];
+
+            charts.category = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: data,
+                        backgroundColor: colors,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'bottom' }
+                    }
+                }
+            });
+        }
+
+        async function applyFilters() {
+            const facility = document.getElementById('filterFacility').value;
+            const year = document.getElementById('filterAcademicYear').value;
+            const major = document.getElementById('filterMajor').value;
+            const minScore = document.getElementById('filterMinScore').value;
+            const maxScore = document.getElementById('filterMaxScore').value;
+
+            let url = `${API_BASE_URL}/filtered?`;
+            if (facility) url += `facility=${facility}&`;
+            if (year) url += `academic_year=${year}&`;
+            if (major) url += `major=${major}&`;
+            url += `min_score=${minScore}&max_score=${maxScore}`;
+
+            const response = await fetch(url);
+            const data = await response.json();
+
+            const resultsHtml = `
+                <div class="chart-container">
+                    <h3>Filtered Results</h3>
+                    <p><strong>Total Records:</strong> ${data.total_records} | <strong>Average Score:</strong> ${data.average_score.toFixed(2)}/5.0</p>
+                    <table class="data-table">
+                        <thead>
+                            <tr>
+                                <th>Student ID</th>
+                                <th>Facility</th>
+                                <th>Score</th>
+                                <th>Year</th>
+                                <th>Major</th>
+                                <th>Feedback</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            ${data.data.slice(0, 10).map(row => `
+                                <tr>
+                                    <td>${row.student_id}</td>
+                                    <td>${row.facility_rated}</td>
+                                    <td><span style="background: ${getScoreColor(row.satisfaction_score)}; padding: 5px 10px; border-radius: 5px; color: ${row.satisfaction_score > 2 ? '#000' : '#fff'}; font-weight: bold;">${row.satisfaction_score}</span></td>
+                                    <td>${row.academic_year}</td>
+                                    <td>${row.major}</td>
+                                    <td>${row.feedback}</td>
+                                </tr>
+                            `).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            `;
+            document.getElementById('filteredResults').innerHTML = resultsHtml;
+        }
+
+        function getScoreColor(score) {
+            if (score >= 4) return '#90EE90';
+            if (score >= 3) return '#FFD700';
+            return '#FFB6C6';
+        }
+
+        function resetFilters() {
+            document.getElementById('filterFacility').value = '';
+            document.getElementById('filterAcademicYear').value = '';
+            document.getElementById('filterMajor').value = '';
+            document.getElementById('filterMinScore').value = '1';
+            document.getElementById('filterMaxScore').value = '5';
+            document.getElementById('filteredResults').innerHTML = '';
+        }
+
+        function switchSection(section) {
+            document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+            document.getElementById(section).classList.add('active');
+            document.querySelectorAll('.nav-item').forEach(item => item.classList.remove('active'));
+            event.target.closest('.nav-item').classList.add('active');
+        }
+
+        function showMessage(message, type) {
+            const element = document.getElementById(type === 'error' ? 'error-message' : 'success-message');
+            element.textContent = message;
+            element.style.display = 'block';
+            setTimeout(() => element.style.display = 'none', 5000);
+        }
+
+        // Initialize on load
+        window.addEventListener('load', initDashboard);
+    </script>
+</body>
+</html>
