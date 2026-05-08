@@ -39,7 +39,7 @@ function App() {
       setMajors(majorsRes.data);
       setError(null);
     } catch (err) {
-      setError('Failed to load data. Make sure the backend is running on http://localhost:8000');
+      setError(`Failed to load data. Make sure the backend is running at ${API_BASE_URL}`);
       console.error(err);
     } finally {
       setLoading(false);
